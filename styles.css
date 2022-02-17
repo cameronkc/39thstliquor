@@ -45,6 +45,7 @@ body {
 	color: rgb(251, 88, 89);
 	font-weight: 700;
 	font-size: 1.4em;
+	padding-left: 1em
 	overflow: hidden;
 }
 .nav-item:hover {
@@ -59,7 +60,6 @@ body {
 	.nav-item {
 		display: none;
 	}
-
 	.nav-list {
 		justify-content: flex-end;
 		padding-right: 2em;
@@ -180,7 +180,7 @@ span {
 }
 
 #about h1 {
-	color: var(--primary-color);
+	color: #7f7f7f;
 	font-size: 3em;
 }
 
@@ -207,7 +207,7 @@ span {
 
 .products h1 {
 	font-size: 3em;
-	color: var(--primary-color);
+	color: #7f7f7f;
 	margin-bottom: 2em;
 }
 
