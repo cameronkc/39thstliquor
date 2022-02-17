@@ -1,0 +1,362 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+	--primary-color: rgb(251, 88, 89);
+}
+/* Weights = 300,400,700,900 */
+
+.nav-bar {
+	background-color: black;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	color: white;
+	height: 100px;
+}
+
+.logo {
+	position: absolute;
+	padding: 0.5em;
+	padding-left: 2em;
+	height: 90px;
+	width: 180px;
+}
+
+.nav-list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item {
+	padding: 1em;
+	text-decoration: none;
+	color: rgb(251, 88, 89);
+	font-weight: 700;
+	font-size: 1.4em;
+	overflow: hiddenn;
+}
+.nav-item:hover {
+	color: gray;
+}
+.hero {
+	height: 400px;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-size: 1em;
+}
+
+#title {
+	font-weight: 400;
+	font-size: 3em;
+	line-height: 1.2;
+	margin-bottom: 15px;
+	color: #fff;
+	font-family: "Rubik Mono One", sans-serif;
+}
+#subtitle {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.2;
+	margin-bottom: 15px;
+	color: rgb(167, 164, 164);
+	font-family: "Rubik Mono One", sans-serif;
+}
+span {
+	font-family: "Rubik Mono One", sans-serif;
+	color: var(--primary-color);
+}
+
+.showcase {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color)
+		url("./https://traversymedia.com/downloads/cover.jpg") no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: "";
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+#about {
+	text-align: center;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background-color: black;
+}
+
+#about p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#about h1 {
+	color: var(--primary-color);
+	font-size: 3em;
+}
+
+#about h2 {
+	margin: 30px 0;
+	color: var(--primary-color);
+}
+
+.social a {
+	margin: 0 5px;
+}
+
+.products {
+	background-color: #111;
+	padding-top: 5em;
+	text-align: center;
+}
+
+.products h1 {
+	font-size: 3em;
+	color: var(--primary-color);
+	margin-bottom: 2em;
+}
+
+.listing {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product {
+	width: 240px;
+	position: relative;
+}
+
+.product a {
+	text-decoration: none;
+}
+
+.img-wrapper {
+	display: block;
+	width: 100%;
+	height: 240px;
+	border: 1px solid #afafaf;
+	border-bottom: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.img-wrapper img {
+}
+
+.info {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	position: relative;
+	padding: 40px 10px 20px 10px;
+	text-align: center;
+
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	transition-property: color, height;
+	transition-duration: 0.3s, 0.4s;
+	transition-timing-function: ease-out;
+	height: 83px;
+}
+
+.info:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	transform: scaleY(0);
+	transform-origin: 50%;
+	transition: transform 0.3s ease-out;
+}
+
+.info:after {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	border-style: solid;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	left: calc(50% - 11px);
+	bottom: 0;
+	border-width: 10px 10px 0 10px;
+	border-color: black transparent transparent transparent;
+}
+
+.product:hover .info {
+	height: 40px;
+}
+
+.product:hover .info:before {
+	transform: scaleY(0.7);
+}
+
+.product:hover .info:after {
+	visibility: visible;
+	transform: translateY(10px);
+}
+
+.title {
+	transition: transform 0.3s ease-out;
+}
+.title a {
+	color: inherit;
+}
+.product:hover .title {
+	transform: translateY(-18px);
+	font-weight: bold;
+	color: #000;
+}
+
+.price {
+	background: #e32d2c;
+	position: absolute;
+	font-size: 1.3em;
+	padding: 4px 13px;
+	top: -15px;
+	right: 10px;
+}
+
+.price.sale {
+	background: #00ba2f;
+}
+
+.price.old {
+	font-size: 0.95em;
+	padding: 4px 6px;
+	text-decoration: line-through;
+	top: -43px;
+}
+
+.actions-wrapper {
+	margin-top: 14px;
+	display: flex;
+	justify-content: space-around;
+	visibility: hidden;
+}
+
+.actions-wrapper * {
+	width: 50%;
+	padding: 2px 0;
+	text-align: center;
+	color: #191919;
+	font-size: 0.95em;
+	font-weight: bold;
+}
+.actions-wrapper *:before {
+	font-family: "FontAwesome";
+	margin-right: 8px;
+}
+.wishlist {
+	border-right: 1px solid #afafaf;
+}
+.wishlist:hover {
+	color: #e32d2c;
+}
+.wishlist:before {
+	content: "\f08a";
+}
+
+.cart:hover {
+	color: #0a75b9;
+}
+.cart:before {
+	content: "\f07a";
+}
+
+.product:hover .actions-wrapper * {
+	visibility: visible;
+}
+
+.note {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 4px 8px;
+	font-size: 0.9em;
+}
+
+.note.on-sale {
+	background: #00ba2f;
+	color: #fff;
+}
+
+.note.no-stock {
+	background: #191919;
+	color: #fff;
+}
