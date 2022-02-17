@@ -33,6 +33,7 @@
 	list-style-type: none;
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .nav-item {
@@ -45,6 +46,19 @@
 }
 .nav-item:hover {
 	color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+	.nav-item {
+		display: none;
+	}
+	.nav-list {
+		justify-content: flex-end;
+		padding-right: 2em;
+	}
+	.fa-bars {
+		font-size: 2em;
+	}
 }
 .hero {
 	height: 400px;
