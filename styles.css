@@ -185,7 +185,7 @@ span {
 
 @media only screen and (max-width: 400px) {
 	#about {
-		padding-top: 2em;
+		margin-top: -2em;
 	}
 }
 
