@@ -4,7 +4,9 @@
 	box-sizing: border-box;
 	font-family: "Source Sans Pro", sans-serif;
 }
-
+body {
+	background-color: #000;
+}
 :root {
 	--primary-color: rgb(251, 88, 89);
 }
@@ -51,10 +53,6 @@
 
 .fa-bars {
 	display: none;
-}
-
-body {
-	background-color: #000;
 }
 
 @media only screen and (max-width: 900px) {
