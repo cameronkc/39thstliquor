@@ -192,6 +192,7 @@ span {
 .product {
 	width: 240px;
 	position: relative;
+	padding-bottom: 2em;
 }
 
 .product a {
