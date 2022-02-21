@@ -412,5 +412,9 @@ span {
 .social-container {
 	padding: 2em;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+}
+
+.fb-page {
+	width: 400px !important;
 }
