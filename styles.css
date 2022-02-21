@@ -412,8 +412,5 @@ span {
 .social-container {
 	padding: 2em;
 	display: flex;
-	justify-content: center;
-}
-
-.fb-page {
+	justify-content: space-around;
 }
