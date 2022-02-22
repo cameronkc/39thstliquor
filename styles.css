@@ -201,12 +201,12 @@ span {
 .social h2 {
 	text-align: center;
 	margin: 30px 0;
-	color: #fff;
+	color: #111;
 }
 
 .social a {
 	margin: 0 5px;
-	color: #fff;
+	color: #111;
 }
 
 @media only screen and (max-width: 400px) {
@@ -410,11 +410,13 @@ span {
 }
 
 .social-container {
+	background-color: #111;
 	padding: 2em;
 	display: flex;
 	justify-content: center;
 }
 
 .fb-page {
+	margin-left: 3em;
 	width: 400px !important;
 }
