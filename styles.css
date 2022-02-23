@@ -52,6 +52,14 @@ body {
 	color: gray;
 }
 
+.title-gen {
+	font-weight: 400;
+	font-size: 3em;
+	margin-bottom: 15px;
+	color:#e32d2c;
+	font-family: "Rubik Mono One", sans-serif;
+}
+
 .fa-bars {
 	color: black;
 }
@@ -106,7 +114,7 @@ span {
 
 .showcase {
 	height: 80vh;
-	display: flex;
+	display: grid;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
@@ -114,6 +122,9 @@ span {
 	padding: 0 20px;
 }
 
+.fb-page {
+	justify-content: start;
+}
 .video-container {
 	position: absolute;
 	top: 0;
@@ -216,16 +227,12 @@ span {
 }
 
 .products {
+	text-align: center;
 	background-color: #111;
 	padding-top: 2em;
 	text-align: center;
 }
 
-.products h1 {
-	font-size: 3em;
-	color: #fff;
-	margin-bottom: 2em;
-}
 
 .listing {
 	list-style: none;
@@ -237,6 +244,7 @@ span {
 }
 
 .product {
+	padding-top: 2em;
 	width: 240px;
 	position: relative;
 	padding-bottom: 2em;
@@ -409,6 +417,12 @@ span {
 	color: #fff;
 }
 
+@media only screen and (max-width: 900px) {
+	.title-gen {
+		font-size: 2em;
+	}
+}
+
 .social-container {
 	background-color: #111;
 	padding: 2em;
@@ -420,3 +434,19 @@ span {
 	margin-left: 3em;
 	width: 400px !important;
 }
+
+.footer {
+	color: #7f7f7f;
+	display: flex;
+	justify-content: space-around;
+	padding: 2em;
+	text-align: center;
+}
+.social-footer {
+	display: grid;
+}
+
+.social-footer a {
+	font-size: 0.75em;
+}
+
