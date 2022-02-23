@@ -187,7 +187,7 @@ span {
 	text-align: center;
 	padding-top: 2em;
 	padding-bottom: 5em;
-	background-color: black;
+	background-color: #111;
 }
 
 .about p {
@@ -235,7 +235,7 @@ span {
 
 .products {
 	text-align: center;
-	background-color: #111;
+	background-color: #191919;
 	padding-top: 2em;
 	text-align: center;
 }
@@ -431,7 +431,7 @@ span {
 }
 
 .social-container {
-	background-color: black;
+	background-color: #191919;
 	padding: 2em;
 	display: flex;
 	justify-content: center;
@@ -443,6 +443,7 @@ span {
 }
 
 .footer {
+	background-color:#111;
 	color: #7f7f7f;
 	display: flex;
 	justify-content: space-around;
@@ -476,6 +477,8 @@ span {
 
 .tagembed-container {
 	padding: 3em;
+	margin-bottom: 4em;
+	background-color: #191919
 }
 
 .hero-links {
@@ -517,4 +520,7 @@ span {
 	.locations {
 		display: flex;
 	}
+}
+.product-img {
+	width: 100%;
 }
