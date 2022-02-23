@@ -76,6 +76,14 @@ body {
 		opacity: 1;
 		color: white;
 	}
+	.vl {
+		display: none;
+	}
+}
+
+#nav-contact  {
+	text-decoration: underline;
+	text-underline-offset: 0.5em;
 }
 
 .hero {
@@ -222,6 +230,7 @@ span {
 	.showcase {
 		height: 75vh;
 	}
+	
 }
 
 .products {
@@ -455,6 +464,15 @@ span {
 	background-color: #111 ;
 	color: white
 }
+@media only screen and (max-width: 400px) {
+	.showcase {
+		height: 75vh;
+	}
+	.footer {
+		display: grid;
+		padding-top: 2em;
+	}
+}
 
 .tagembed-container {
 	padding: 3em;
@@ -468,3 +486,35 @@ span {
 	padding: 1em;
 }
 
+.vl {
+	border: 1px solid #191919;
+	height: 2em;
+}
+
+.locations {
+	display: grid;
+	background-color: #191919;
+	justify-content: center;
+	text-align: center;
+	color: white
+}
+
+.maryville-loc {
+	padding: 2em;
+}
+.bethany-loc {
+	padding: 2em;
+}
+.bethany-loc h3 {
+	padding-bottom: 2em
+}
+
+.maryville-loc h3 {
+	padding-bottom: 2em
+}
+
+@media only screen and (min-width: 1250px) {
+	.locations {
+		display: flex;
+	}
+}
