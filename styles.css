@@ -13,18 +13,13 @@ body {
 /* Weights = 300,400,700,900 */
 
 .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	background-color: black;
 }
 
-.nav-container {
-	display: flex;
-	justify-content: center;
-	color: white;
-	height: 100px;
-}
-
 .logo {
-	position: absolute;
 	padding: 0.5em;
 	padding-left: 2em;
 	height: 90px;
@@ -36,7 +31,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 }
 
 .nav-item {
@@ -72,8 +66,12 @@ body {
 		justify-content: flex-end;
 		padding-right: 2em;
 	}
+	.nav-right {
+		display: none;
+	}
 	.fa-bars {
 		display: block;
+		justify-content: end;
 		font-size: 2em;
 		opacity: 1;
 		color: white;
@@ -456,4 +454,16 @@ span {
 	text-align: center;
 	background-color: #111 ;
 	color: white
+}
+
+.tagembed-container {
+	padding: 3em;
+}
+
+.hero-links {
+	display: flex;
+	justify-content: center;
+}
+.hero-links a {
+	padding: 1em;
 }
