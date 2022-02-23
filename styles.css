@@ -426,7 +426,7 @@ span {
 
 @media only screen and (max-width: 900px) {
 	.title-gen {
-		font-size: 3em;
+		font-size: 2.8em;
 	}
 }
 
@@ -438,7 +438,6 @@ span {
 }
 
 .fb-page {
-	margin-left: 3em;
 	width: 400px !important;
 }
 
@@ -461,6 +460,7 @@ span {
 .social-hero {
 	padding: 5em;
 	display: grid;
+	justify-content: center;
 	text-align: center;
 	background-color: #111 ;
 	color: white
