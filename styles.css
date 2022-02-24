@@ -58,6 +58,7 @@ body {
 	color: black;
 }
 
+
 @media only screen and (max-width: 900px) {
 	.nav-item {
 		display: none;
