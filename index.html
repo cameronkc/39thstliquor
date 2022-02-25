@@ -31,6 +31,7 @@
         <img class="logo" src="./assets/logo.jpg" alt="39th St Liquor Logo" /></a></div>
     <div class="nav-center">
       <ul class="nav-list">
+        <div class="vl"></div>
         <a class="nav-item" href="#">
           <li>Products</li>
         </a>
@@ -42,12 +43,20 @@
         <a class="nav-item" href="reviews.html">
           <li>Reviews</li>
         </a>
-        <div class="openMenu">
-          <i class="fas fa-bars"></i>
-        </div>
+        <div class="vl"></div>
       </ul>
     </div>
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="social.html">What's New</a>
+      <a href="#">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
     <div class="nav-right">
+
       <a class="nav-item" id="nav-contact" href="contact.html">Contact</li></a>
     </div>
   </section>
@@ -144,6 +153,16 @@
         alt="39th St Liquor Maryville Missouri Instagram"><i class="fab fa-instagram fa-3x"></i></a>
     </div>
   </section>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "grid") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "grid";
+      }
+    }
+  </script>
 </body>
 
 </html>

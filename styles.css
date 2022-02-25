@@ -54,8 +54,29 @@ body {
 	font-family: "Rubik Mono One", sans-serif;
 }
 
+.icon {
+	display: none;
+}
 .fa-bars {
-	color: black;
+	display: block;
+	justify-content: end;
+	font-size: 2em;
+	opacity: 1;
+	color: white;
+	padding-right: 1em;
+}
+
+#myLinks {
+	display: none;
+	position: absolute;
+	top: 5.5em;
+	right: 0;
+	background-color: black;
+	padding: 1em;
+	z-index: 11;
+}
+#myLinks a {
+	padding: 1em;
 }
 
 
@@ -70,12 +91,10 @@ body {
 	.nav-right {
 		display: none;
 	}
-	.fa-bars {
-		display: block;
-		justify-content: end;
-		font-size: 2em;
-		opacity: 1;
+	.icon {
+		display: grid;
 		color: white;
+		
 	}
 	.vl {
 		display: none;
