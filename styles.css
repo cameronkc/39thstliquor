@@ -242,6 +242,10 @@ span {
 .about-right img {
 	margin-top: 2em;
 	width: 500px;
+	border: 2px solid #7f7f7f;
+
+    padding: 6px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -261,6 +265,7 @@ span {
 
 @media only screen and (max-width: 600px) {
 	.about-right img {
+		margin-top: 2em;
 		width: 350px;
 	}
 }
