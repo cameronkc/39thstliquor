@@ -8,6 +8,7 @@
     <meta name="description"
         content="Northwest Missouri's largest selection of beer, wine, spirits, and bar accessories." />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a916fcf07d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -19,10 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <title>39th St Liquor</title>
-
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+        nonce="QsHOPqO5"></script>
     <section class="nav-bar">
         <div class="nav-left"><a href="index.html">
                 <img class="logo" src="./assets/logo.jpg" alt="39th St Liquor Logo" /></a></div>
@@ -50,7 +53,7 @@
             <a href="reviews.html">Reviews</a>
             <a href="contact.html">Contact Us</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" aria-label="Hamburger Menu" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <div class="nav-right">
@@ -58,35 +61,43 @@
             <a class="nav-item" id="nav-contact" href="contact.html">Contact</li></a>
         </div>
     </section>
-    <section class="social-hero">
-        <h2 class="title-gen">
-            Contact Us
-        </h2>
-        <h3 id="subtitle">Have Questions? We have answers, call us today!
+    <section class="products">
+        <h2 class="title-gen">Our Products</h2>
+        <h3 id="subtitle" style="width: 75vw; margin: auto;">
+            We strive to find new products for our customers to enjoy. Providing exotic tequila, celebrity owned liquor,
+            the
+            latest brand named beer - and much, much more.
         </h3>
-    </section>
-    <section class="locations">
-        <div class="maryville-loc">
-            <h2 class="title-gen">Maryville, MO</h2>
-            <a href="tel:660-225-0106">(660) 224-0106</a>
-            <h3>
-                108 S Main St, Maryville, MO 64468
-            </h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.8469540312612!2d-94.87537828524012!3d40.34574096787898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87eac5fc3ce5d0e3%3A0x747d5cc2aa591645!2s39th%20Street%20Liquor!5e0!3m2!1sen!2sus!4v1645657484244!5m2!1sen!2sus"
-                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="bethany-loc">
-            <h2 class="title-gen">Bethany, MO</h2>
-            <a href="tel:660-425-3939">(660) 425-3939</a>
-            <h3>302 N 39th St, Bethany, MO 64424</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.2622193373263!2d-94.01640708524275!3d40.26992497247995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ea3f23a800362f%3A0x4312b09d0697ab60!2s39th%20st%20Liquor!5e0!3m2!1sen!2sus!4v1645657514973!5m2!1sen!2sus"
-                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+        <ul class="listing">
+            <li class="product">
+                <a class="img-wrapper" href="#">
+                    <img class="product-img" src="./assets/product1.jpg" alt="Liqour" />
+                </a>
 
-    <section class="footer">
+                <div class="info">
+                    <div class="title">Liquor</div>
+                </div>
+
+            </li>
+            <li class="product">
+                <a class="img-wrapper" href="#">
+                    <img class="product-img" src="assets/product2.jpg" alt="Wine" />
+                </a>
+                <div class="info">
+                    <div class="title">Wine</div>
+                </div>
+            </li>
+            <li class="product">
+                <a class="img-wrapper" href="#">
+                    <img class="product-img" src="assets/product3.jpg" alt="Liquor" />
+                </a>
+                <div class="info">
+                    <div class="title"><a href="#">Beer</a></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="footer" style="background-color: #191919;">
         <div class="contact-footer">
             <h3>Contact Us</h3>
             <p>Maryville, Mo</p>
@@ -108,19 +119,23 @@
         <div class="social-footer">
             <h3>Follow Us</h3>
             <a href="https://www.facebook.com/39th-St-Liquor-Bethany-MO-102408271872660/" target="_blank"
-                name="facebook" alt="39th St Liquor Bethany MO Facebook"><i class="fab fa-facebook fa-3x"></i></a>
-            <a href="https://www.instagram.com/39thstreetliquor/" target="_blank" name="instagram"
+                aria-label="Facebook" alt="39th St Liquor Bethany MO Facebook"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/39thstreetliquor/" target="_blank" aria-label="Instagram"
                 alt="39th St Liquor Maryville Missouri Instagram"><i class="fab fa-instagram fa-3x"></i></a>
         </div>
     </section>
+
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "grid") {
                 x.style.display = "none";
             } else {
+
                 x.style.display = "grid";
             }
         }
     </script>
 </body>
+
+</html>
