@@ -176,6 +176,7 @@ span {
 }
 
 .video-container video {
+	display: block;
 	max-width: 100%;
 	position: absolute;
 	top: 50%;
